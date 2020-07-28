@@ -4,26 +4,26 @@ In this notebook I'll show how to perform some basic analysis using the Pandas p
 
 ## Key features:
 
-(1) Importing/Exporting data
+1. Importing/Exporting data
 
-(2) Concatenating dataframes
+1. Concatenating dataframes
 
-(3) Working with filters
+1. Working with filters
 
-(4) Changing names of columns
+1. Changing names of columns
 
-(5) Loops with lists
+1. Loops with lists
 
-(6) Changing data type
+1. Changing data type
 
 ## Some packs and libs used:
 
-(1) Pandas
+1. Pandas
 
-(2) Os
+1. Os
 
-(3) Matplotlib
+1. Matplotlib
 
-(4) Seaborn
+1. Seaborn
 
-(5) Numpy
+1. Numpy
