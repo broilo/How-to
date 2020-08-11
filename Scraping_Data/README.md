@@ -33,4 +33,4 @@ Are features that tell the Crawler or Spyder which are the sites so that it can 
 1. where you creates at least one Spyder with defined constraints,
 1. which will connect to an url or a server,
 1. will ask for a request,
-1. and the url or server will give you a response with ,the information that you're looking for.
+1. and the url or server will give you a response with, the information that you're looking for.
