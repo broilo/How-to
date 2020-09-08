@@ -1,5 +1,8 @@
 from flask import Flask
 from flask import render_template
+from flask import request
+from flask import url_for
+from flask import redirect
 from forms import SignUpForm
 
 app = Flask(__name__)
@@ -31,9 +34,12 @@ def blogpost(blog_id):
     return 'This is blog post number ' + blog_id
 
 
-@app.route('/signup')
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
     form = SignUpForm()
+    if form.is_submitted():
+        result = request.form()
+        return render_template('user.html', result=result)
     return render_template('signup.html', form=form)
 
 
