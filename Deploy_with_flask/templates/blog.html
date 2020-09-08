@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
+{% block content %}
+<h2> Welcome to this blog! <h2>
+        <p> I am {{author}}, the author of this blog <p>
+        {% if sunny %}
+            <p> Today it is sunny </p>
+        {% else %}
+            <p> Today it is rainy </p>
+        {% endif %}
 
-<body>
-    <h2> Welcome to this blog! <h2>
-            <p> I am {{author}}, the author of this blog
-            <p>
-</body>
-
-</html>
+        {% for post in posts %}
+            <h2> {{post.title}} </h2>
+            <h3> Author: {{post.author}} </h3>
+        {% endfor %}
+{% endblock %}
