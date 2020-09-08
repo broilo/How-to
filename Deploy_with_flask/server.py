@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -18,15 +19,7 @@ def about():
 
 @app.route('/blog')
 def blog():
-    return '''
-    <html>
-    <head> <head> 
-    <body>
-        <h2> Welcome to this blog! <h2>
-        <p> I am Mateus, the author of this blog. <p>
-    <body>
-    <html>
-    '''
+    return render_template('blog.html', author = "Matt")
 
 
 @app.route('/blog/<string:blog_id>')
